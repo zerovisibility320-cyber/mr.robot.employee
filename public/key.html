@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Key Verification</title>
+    <link rel="stylesheet" href="key.css">
+</head>
+<body>
+    <div class="key-container">
+        <h1>🔐 API Key Required</h1>
+        
+        <div id="userType" class="user-type"></div>
+        
+        <div class="key-box">
+            <p>To access the employee data, you need to provide the correct API key.</p>
+            <input 
+                type="password" 
+                id="keyInput" 
+                placeholder="Enter your API key..." 
+                class="key-input"
+            />
+            
+            <button id="submitBtn" class="submit-btn">Verify Key</button>
+            <button id="backBtn" class="back-btn">Go Back</button>
+        </div>
+        
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="key.js"></script>
+</body>
+</html>
