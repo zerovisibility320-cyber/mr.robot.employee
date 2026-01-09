@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This repository contains the frontend for a CTF challenge. The goal is to find the exposed API key and use it to access the employee data from the backend.",
   "license": "ISC",
-  "author": "",
+  "author": "  ",
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
