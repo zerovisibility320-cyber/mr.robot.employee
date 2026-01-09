@@ -1,6 +1,6 @@
 // Get user type from sessionStorage
 const userType = sessionStorage.getItem('userType') || 'guest';
-// find the commit
+
 // Display user type
 document.getElementById('userType').innerHTML = `<p class="user-label">Accessing as: <strong>${userType.toUpperCase()}</strong></p>`;
 
@@ -74,4 +74,3 @@ document.getElementById('keyInput').addEventListener('keypress', function(event)
         document.getElementById('submitBtn').click();
     }
 });
-
