@@ -10,7 +10,7 @@ A developer has accidentally exposed an API key in the frontend code. Your missi
 
 *   Check all the files in the frontend repository.
 *   The API key is used to authenticate with the backend server.
-*   The backend server is running at `http://localhost:3000`.
+*   The backend server is running at `http://localhost:5000`.
 *   The endpoint to get the employee data is `/api/employees`.
 *   You will need to use a tool like `curl` or Postman to make a request to the backend with the API key.
 
