@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000;
 
 // Store the correct API key here
 const CORRECT_API_KEY = "EMP_SECURE_TOKEN_8829_X";
-
+// dont use the key restricted area
 // Middleware
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -54,3 +54,4 @@ app.use((req, res) => {
 app.listen(PORT, () => {
     console.log(`Frontend server running on http://localhost:${PORT}`);
 });
+
