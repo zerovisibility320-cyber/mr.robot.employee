@@ -1,0 +1,82 @@
+/* Import a digital/monospaced font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+body {
+    background-color: #0a0a0a; /* Deep black */
+    color: #00ff41; /* Classic Matrix Green */
+    font-family: 'Fira Code', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    /* Scanline effect */
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 4px, 3px 100%;
+}
+
+.login-box {
+    border: 2px solid #00ff41;
+    padding: 40px;
+    background-color: rgba(0, 20, 0, 0.9);
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+/* Adds a "terminal" header effect */
+.login-box::before {
+    content: "SYSTEM_ACCESS_PORTAL v2.04";
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    font-size: 0.8rem;
+    color: #00ff41;
+}
+
+button {
+    background: transparent;
+    border: 1px solid #00ff41;
+    color: #00ff41;
+    padding: 15px 25px;
+    margin: 10px;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #00ff41;
+    color: #000;
+    box-shadow: 0 0 15px #00ff41;
+}
+
+/* Glitch animation for buttons */
+#adminBtn {
+    border-color: #ff003c; /* Red highlight for admin to look "dangerous" */
+    color: #ff003c;
+}
+
+#adminBtn:hover {
+    background-color: #ff003c;
+    color: #000;
+    box-shadow: 0 0 15px #ff003c;
+}
+
+/* CRT Flicker effect */
+@keyframes flicker {
+    0% { opacity: 0.97; }
+    5% { opacity: 0.95; }
+    10% { opacity: 0.9; }
+    15% { opacity: 0.98; }
+    100% { opacity: 1; }
+}
+
+body {
+    animation: flicker 0.15s infinite;
+}

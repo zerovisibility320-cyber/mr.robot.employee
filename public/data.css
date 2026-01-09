@@ -1,0 +1,58 @@
+/* Hacker Theme Overrides */
+body {
+    background-color: #050505;
+    color: #00ff41;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-shadow: 0 0 8px #00ff41;
+}
+
+#data-container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    border: 1px dashed #00ff41;
+    padding: 10px;
+}
+
+#employeeTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: rgba(0, 20, 0, 0.8);
+}
+
+/* Targeting the Table Headers */
+#employeeTable th {
+    border: 1px solid #00ff41;
+    padding: 12px;
+    text-align: left;
+    background-color: #003300; /* Dark green background */
+    color: #00ff41;
+    text-transform: uppercase;
+}
+
+/* Targeting the Table Data cells */
+#employeeTable td {
+    border: 1px solid #004400;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Back Button styling */
+#backBtn {
+    background: transparent;
+    border: 1px solid #00ff41;
+    color: #00ff41;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#backBtn:hover {
+    background: #00ff41;
+    color: #000;
+}
