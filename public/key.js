@@ -15,7 +15,6 @@ document.getElementById('submitBtn').addEventListener('click', async function() 
         return;
     }
 
-    // https://github.com/zerovisibility320-cyber/mr.robot.employee.git
 
     try {
         const response = await fetch('/api/validate-key', {
@@ -52,6 +51,7 @@ document.getElementById('submitBtn').addEventListener('click', async function() 
 
 // Back button handler
 document.getElementById('backBtn').addEventListener('click', function() {
+    // https://github.com/zerovisibility320-cyber/mr.robot.employee.git
     const messageDiv = document.getElementById('message');
     
     if (userType === 'user') {
@@ -74,3 +74,4 @@ document.getElementById('keyInput').addEventListener('keypress', function(event)
         document.getElementById('submitBtn').click();
     }
 });
+
